@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #dd8b89;
+  height: 100vh;
+  width: 100%;
+  max-width: 110rem;
+  margin: 0 auto;
+  padding: 10rem 0;
+}
+
+header {
+  padding-left: 10rem;
+  padding-bottom: 8rem;
+}
+
+header .types {
+  display: flex;
+  align-items: center;
+}
+
+header .types p {
+  margin-bottom: 3rem;
+  font-weight: 700;
+  font-size: 7rem;
+  color: #ecb8b9;
+  margin-right: 5rem;
+  text-transform: uppercase;
+}
+
+header .types p.active {
+  color: white;
+}
+
+header .sub-text {
+  color: white;
+  font-size: 2rem;
+}
+
+main {
+  position: relative;
+}
+
+main section {
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  height: 10rem;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ecb8b9;
+  cursor: pointer;
+}
+
+.nav .fa-solid {
+  font-size: 3rem;
+  color: #845252;
+}
+
+main section article {
+  height: 30rem;
+  width: 30rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #3e3d3c;
+  padding: 0 6rem;
+}
+
+main section article .title {
+  font-size: 2rem;
+  color: #ca8982;
+  margin-bottom: 1rem;
+}
+
+main section article .value {
+  font-size: 3.5rem;
+  color: white;
+  font-weight: 500;
+}
+
+button {
+  position: absolute;
+  bottom: -2.1rem;
+  left: 13rem;
+  border: none;
+  width: 24rem;
+  padding: 1.4rem 0;
+  background: black;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.5s ease-in-out;
+}
+
+button:hover {
+  transform: translateY(-10px);
+}
+
+main section article.temperature {
+  background: #343335;
+}
+
+main section article.load {
+  background: #201e1f;
+}
